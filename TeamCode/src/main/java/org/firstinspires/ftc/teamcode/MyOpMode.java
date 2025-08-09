@@ -30,7 +30,7 @@ public class MyOpMode extends LinearOpMode {
         Servo base;
         Servo wrist;
         Servo claw;
-
+//hi ryan
         base = hardwareMap.get(Servo.class,  "arm");
         wrist = hardwareMap.get(Servo.class,  "wrist");
         claw = hardwareMap.get(Servo.class,  "claw");
