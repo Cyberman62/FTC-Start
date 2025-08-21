@@ -44,19 +44,19 @@ public class TankDrive extends LinearOpMode { //Make sure the name  here  matche
         waitForStart();
         //Code here  runs one time after start is pressed on the  driver station.
 
-        while(opModeIsActive());
-        //code here will loop until stop is pressed on the driver hub.
+        while(opModeIsActive()) {
+            //code here will loop until stop is pressed on the driver hub.
 
-        //Code  for  tank  drive - it sets power to the motors with Right/Left.setPower()
-        //It sets the power to the joystick's Y. One thing to note about joysticks is that for  the Y axis, Down on the  Y gives a positive value, so it is inverted.
-        //Joysticks max  out at a power of 1 for all the  way to the edge. Motors also  have it so 1 is max power.
+            //Code  for  tank  drive - it sets power to the motors with Right/Left.setPower()
+            //It sets the power to the joystick's Y. One thing to note about joysticks is that for  the Y axis, Down on the  Y gives a positive value, so it is inverted.
+            //Joysticks max  out at a power of 1 for all the  way to the edge. Motors also  have it so 1 is max power.
 
-        Right.setPower(gamepad1.right_stick_y * -1);
-        //Due  to the Y axis being inverted, we multiply it by -1 to flip it.
+            Right.setPower(gamepad1.right_stick_y * -1);
+            //Due  to the Y axis being inverted, we multiply it by -1 to flip it.
 
-        Left.setPower(-gamepad1.left_stick_y);
-        //to get negative values, we can also just  add  a - before it.
-
+            Left.setPower(-gamepad1.left_stick_y);
+            //to get negative values, we can also just  add  a - before it.
+        }
 
         }
     }
