@@ -85,6 +85,10 @@ public class MyOpMode extends LinearOpMode {
                 claw.setPosition(1);
             }
 
+            telemetry.addData("X", gamepad1.left_stick_x);
+            telemetry.addData("Y", gamepad1.left_stick_y);
+            telemetry.update();
+
 
 
 
